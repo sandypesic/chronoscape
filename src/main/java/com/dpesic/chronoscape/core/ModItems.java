@@ -4,11 +4,16 @@ import com.dpesic.chronoscape.item.BlewitItem;
 import com.dpesic.chronoscape.item.JackOLanternMushroomItem;
 import com.dpesic.chronoscape.item.MorelItem;
 import com.dpesic.chronoscape.item.NecroshroomItem;
+import com.dpesic.chronoscape.core.ModBlocks;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.NotNull;
+
+import java.util.function.Supplier;
 
 public class ModItems {
     private ModItems() {}
@@ -45,4 +50,12 @@ public class ModItems {
             NecroshroomItem::new,
             new Item.Properties()
     );
+
+
+    public static final DeferredItem<BlockItem> FUNGAL_SUBSTRATE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem(
+            "fungal_substrate",
+            ModBlocks.FUNGAL_SUBSTRATE,
+            new Item.Properties()
+    );
+
 }

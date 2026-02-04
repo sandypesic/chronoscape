@@ -36,6 +36,7 @@ public class Chronoscape {
 
         }
 
+        // Natural Blocks tab
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 
             event.insertAfter(
@@ -55,6 +56,19 @@ public class Chronoscape {
                     new ItemStack(ModItems.JACK_O_LANTERN_MUSHROOM.get()),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
             );
+
+            event.insertAfter(
+                    new ItemStack(ModItems.JACK_O_LANTERN_MUSHROOM.get()),
+                    new ItemStack(ModItems.NECROSHROOM.get()),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+
+            event.insertAfter(
+                    new ItemStack(ModItems.NECROSHROOM.get()),
+                    new ItemStack(ModItems.FUNGAL_SUBSTRATE_BLOCK_ITEM.get()),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
+            );
+
 
         }
 

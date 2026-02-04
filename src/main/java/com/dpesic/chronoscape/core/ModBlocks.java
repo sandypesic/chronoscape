@@ -5,8 +5,12 @@ import com.dpesic.chronoscape.block.JackOLanternFungusBlock;
 import com.dpesic.chronoscape.block.MorelFungusBlock;
 import com.dpesic.chronoscape.block.NecroshroomFungusBlock;
 
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.SoundType;
 
@@ -56,6 +60,13 @@ public class ModBlocks {
                     .randomTicks()
                     .instabreak()
                     .sound(SoundType.ROOTS)
+    );
+
+    @SuppressWarnings("removal")
+    public static final DeferredBlock<Block> FUNGAL_SUBSTRATE = BLOCKS.registerSimpleBlock(
+            "fungal_substrate",
+            BlockBehaviour.Properties.of()
+                    .sound(SoundType.MUDDY_MANGROVE_ROOTS)
     );
 
 };
