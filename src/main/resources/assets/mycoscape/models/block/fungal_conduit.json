@@ -20,12 +20,12 @@
     }
   },
   "textures": {
-    "particle": "block/sculk_sensor_side",
-    "amethyst": "block/calibrated_sculk_sensor_amethyst",
-    "bottom": "block/sculk_sensor_bottom",
-    "side": "block/sculk_sensor_side",
-    "calibrated_side": "block/calibrated_sculk_sensor_input_side",
-    "top": "block/calibrated_sculk_sensor_top"
+    "particle": "mycoscape:block/fungal_conduit_side",
+    "amethyst": "mycoscape:block/fungal_conduit_amethyst",
+    "bottom": "mycoscape:block/fungal_conduit_bottom",
+    "side": "mycoscape:block/fungal_conduit_side",
+    "calibrated_side": "mycoscape:block/fungal_conduit_input_side",
+    "top": "mycoscape:block/fungal_conduit_top"
   },
   "elements": [
     {
